@@ -1,0 +1,328 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        min-width: 1110px;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 48px;
+            padding-top: 264px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+            letter-spacing: 6.82px;
+            margin-bottom: 50px;
+        }
+
+        &__form {
+            max-width: 653px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 108px;
+
+            input {
+                width: 503px;
+                height: 61px;
+                border: 2px solid #fff;
+            }
+
+            button {
+                width: 150px;
+                height: 61px;
+                border: 2px solid #fff;
+            }
+        }
+    }
+
+    .navigation {
+        .container {
+            height: 83px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navigation__menu {
+                .navigation__btn {
+                    display: none;
+                }
+
+                .menu {
+                    display: flex;
+                    position: relative;
+                    transform: inherit;
+
+                    .navigation__links {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        min-width: 525px;
+                        list-style: none;
+
+                        a {
+                            font-family: 'Aleo', serif;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            color: $text-color;
+                            text-decoration: none;
+                            display: inline-block;
+                            text-decoration: none;
+                        }
+
+                        a::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background: $text-color;
+                            transition: width 0.3s;
+                        }
+
+                        a:hover::after {
+                            width: 100%;
+                            transition: width 0.3s;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .choose {
+        padding-top: 118px;
+        padding-bottom: 131px;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__text {
+            max-width: 510px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h3 {
+                font-size: 36px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 45px;
+            }
+
+            button {
+                font-size: 16px;
+                width: 228px;
+                height: 63px;
+                margin-bottom: inherit;
+            }
+        }
+
+        &__img {
+            min-width: 470px;
+
+            ul {
+                li {
+                    .img-first {
+                        margin-bottom: 10px;
+                        transition: 1s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    .img-second {
+                        margin-bottom: 10px;
+                        transition: 1s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .steps {
+        min-height: 340px;
+        display: flex;
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                position: relative;
+                max-width: 980px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+
+                    &:not(:last-child) {
+                        margin-bottom: 0px;
+                    }
+
+                    svg {
+                        margin-bottom: 40px;
+                        width: 45px;
+                        height: 45px;
+                        background-color: #333333;
+                        z-index: 10;
+                    }
+
+                    h4 {
+                        font-size: 36px;
+                    }
+                }
+
+                .shape {
+                    display: inherit;
+                }
+            }
+
+            .shape {
+                display: flex;
+                position: absolute;
+                fill-opacity: 0.1;
+                top: 0;
+                left: 46px;
+            }
+        }
+    }
+
+    .booking {
+        min-height: 700px;
+        padding-top: 227px;
+
+        .container {
+            max-width: 543px;
+            min-height: 374px;
+            background-color: transparent;
+
+            .booking__modal {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                text-align: left;
+                max-width: 543px;
+                min-height: 374px;
+                background-color: black;
+                opacity: 0.9;
+                padding: 50px 0 0 30px;
+            }
+        }
+
+        &__modal {
+            span {
+                font-size: 28px;
+                letter-spacing: 1.5px;
+                margin-bottom: 23px;
+            }
+
+            h5 {
+                font-size: 28px;
+            }
+
+            button {
+                width: 228px;
+                height: 63px;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    .tourist {
+        background-image: url(../img/section-5-bg.jpg);
+        position: relative;
+        display: flex;
+        min-height: 730px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding-top: 128px;
+
+        .container {
+            text-align: center;
+
+            h4 {
+                font-family: 'Aleo', serif;
+                font-size: 26px;
+                color: #FFFFFF;
+                margin-bottom: 91px;
+            }
+
+            .tourist__wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                img {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                }
+
+                .tourist__text {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    background-color: #333333;
+                    min-width: 650px;
+                    max-height: 287px;
+
+                    h6 {
+                        font-size: 20px;
+                        line-height: 26px;
+                        text-transform: uppercase;
+                        color: #FEFEFE;
+                        padding-left: 60px;
+                        margin-top: 49px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $text-color;
+                        padding: 0 24px 38px 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    .second {
+        .container {
+            display: flex;
+            justify-content: right;
+        }
+    }
+}

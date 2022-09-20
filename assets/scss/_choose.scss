@@ -1,0 +1,71 @@
+.choose {
+    background-image: url(/src/img/section-2-bg.webp);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-bottom: 35px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-family: 'Aleo', serif;
+            font-weight: 400;
+            font-size: 30px;
+            color: $text-color;
+            padding-top: 75px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 1.6px;
+            color: #E8E8E8;
+            margin-bottom: 35px;
+        }
+
+        button {
+            font-family: 'Aleo', serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            align-items: center;
+            letter-spacing: 1.2px;
+            width: 180px;
+            height: 45px;
+            background-color: $main-color;
+            color: $text-color;
+            margin-bottom: 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                list-style: none;
+
+                .img-first {
+                    max-width: 75%;
+                    margin-bottom: 20px;
+                }
+
+                .img-second {
+                    max-width: 75%;
+                    float: right;
+                }
+            }
+        }
+    }
+}
