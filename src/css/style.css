@@ -33,7 +33,7 @@ body {
 }
 
 .header {
-  background-image: url(/src/img/main-bg.webp);
+  background-image: url(../img/main-bg.webp);
   position: relative;
   display: flex;
   min-height: 100vh;
@@ -300,7 +300,7 @@ body {
 }
 
 .choose {
-  background-image: url(/src/img/section-2-bg.webp);
+  background-image: url(../img/section-2-bg.jpg);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
